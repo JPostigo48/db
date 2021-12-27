@@ -14,7 +14,7 @@ export class SignInForm extends React.Component {
             <a href="/signup">Registrarme</a>
           </div>
           <div className="mt-3">
-            <label for="email" className="etiqueta">
+            <label htmlFor="email" className="etiqueta">
               Usuario
             </label>
             <input
@@ -28,7 +28,7 @@ export class SignInForm extends React.Component {
             />
           </div>
           <div className="mt-3">
-            <label for="contrasena" className="etiqueta">
+            <label htmlFor="contrasena" className="etiqueta">
               Contraseña
             </label>
             <input
