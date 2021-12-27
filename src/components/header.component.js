@@ -38,9 +38,9 @@ export const Header = () => {
     }
     return (
       <div className="sesion-container">
-        <a href={link}>
+        <Link to={link}>
           <button type="button">{text}</button>
-        </a>
+        </Link>
       </div>
     );
   };
