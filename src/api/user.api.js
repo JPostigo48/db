@@ -6,6 +6,7 @@ export const signin = user => {
     headers: {
       "Content-Type": "application/json"
     },
+    mode: 'cors',
     body: JSON.stringify(user)
   })
     .then(response => {
@@ -22,6 +23,7 @@ export const signup = user => {
     headers: {
       "Content-Type": "application/json"
     },
+    mode: 'cors',
     body: JSON.stringify(user)
   })
     .then(response => {
@@ -38,6 +40,7 @@ export const getUsersList = () => {
     headers: {
       "Content-Type": "application/json"
     },
+    mode: 'cors',
   })
     .then(response => {
       return response.json();
@@ -53,6 +56,7 @@ export const getUsersListDate = () => {
     headers: {
       "Content-Type": "application/json"
     },
+    mode: 'cors',
   })
     .then(response => {
       return response.json();

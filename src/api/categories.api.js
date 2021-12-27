@@ -5,7 +5,8 @@ export const getAllCategories = () => {
     method: "GET",
     headers: {
       "Content-Type": "aplication/json"
-    }
+    },
+    mode: 'cors',
   }).then(response => {
     console.log(`${API}/categories/list`)
     return response.json();
@@ -19,7 +20,8 @@ export const getSubCategories = () => {
     method: "GET",
     headers: {
       "Content-Type": "aplication/json"
-    }
+    },
+    mode: 'cors',
   }).then(response => {
     console.log(`${API}/categories/list`)
     return response.json();

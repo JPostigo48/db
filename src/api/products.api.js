@@ -6,6 +6,7 @@ export const getProductsList = () => {
     headers: {
       "Content-Type": "application/json"
     },
+    mode: 'cors',
   })
     .then(response => {
       return response.json();
@@ -21,6 +22,7 @@ export const getProductsListStock = () => {
     headers: {
       "Content-Type": "application/json"
     },
+    mode: 'cors',
   })
     .then(response => {
       return response.json();
@@ -40,6 +42,7 @@ export const getProductsBySubcategory = (c) => {
     headers: {
       "Content-Type": "application/json"
     },
+    mode: 'cors',
     body: JSON.stringify(c)
   })
     .then(response => {
@@ -56,6 +59,7 @@ export const deleteOneProduct = (model) => {
     headers: {
       "Content-Type": "application/json"
     },
+    mode: 'cors',
     body: JSON.stringify(model)
   })
     .then(response => {
@@ -72,6 +76,7 @@ export const getProductById = (id) => {
     headers: {
       "Content-Type": "application/json"
     },
+    mode: 'cors',
     body: JSON.stringify(id)
   })
     .then(response => {
@@ -89,6 +94,7 @@ export const modifyOneProduct = (product) => {
     headers: {
       "Content-Type": "application/json"
     },
+    mode: 'cors',
     body: JSON.stringify(product)
   })
     .then(response => {
@@ -105,6 +111,7 @@ export const createOneProduct = (product) => {
     headers: {
       "Content-Type": "application/json"
     },
+    mode: 'cors',
     body: JSON.stringify(product)
   })
     .then(response => {

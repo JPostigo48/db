@@ -6,6 +6,7 @@ export const createSales = (a) => {
     headers: {
       "Content-Type": "application/json"
     },
+    mode: 'cors',
     body: JSON.stringify(a)
   })
     .then(response => {

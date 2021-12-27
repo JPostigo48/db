@@ -6,6 +6,7 @@ export const deleteOneUser = (e) => {
     headers: {
       "Content-Type": "application/json"
     },
+    mode: 'cors',
     body: JSON.stringify(e)
   })
     .then(response => {
